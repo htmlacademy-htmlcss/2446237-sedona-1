@@ -47,6 +47,7 @@
         </li>
       </ul>
       </header>
+
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
@@ -78,31 +79,126 @@
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="control-input" type="radio" name="Гостиница" checked>
+                        <input class="control-input" type="radio" name="product-group" value="hotel">
                         Гостиница
                     </label>
                     </li>
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" type="radio" name="Отель">
+                            <input class="control-input" type="radio" name="product-group" value="motel">
                         Отель
                     </label>
                     </li>
                     <li class="catalog-filter-item">
                         <label class="control">
-                            <input class="control-input" type="radio" name="Апартаменты">
+                            <input class="control-input" type="radio" name="product-group" value="apartments">
                          Апартаменты
                         </label>
                     </li>
                 </ul>
-            </fieldset>
             </fieldset>
             <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             </fieldset>
         </form>
       </section>
+
+      <select class="select-control" aria-label="Сортировка">
+        <option value="cheap">Сначала дешевые</option>
+        <option value="expensive">Сначала дорогие</option>
+        <option value="popular">Сначала популярные</option>
+      </select>
+        <a class="button button-light" href="#">
+            <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button button" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button button" href="#">
+            <span class="visually-hidden">Показать фото</span>
+        </a>
+        <ul class="product-card">
+            <li class="product-card"></li>
+            <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Amara Resort & Spa</h3>
+            </a>
+            <b class="product-card-price">От 4000 ₽</b>
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button class="product-card-button favorite">В избранное</button>
+            </li>
+
+            <li class="product-card"></li>
+            <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <b class="product-card-price">От 5000 ₽</b>
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button class="product-card-button favorite">В избранное</button>
+            </li>
+
+            <li class="product-card"></li>
+            <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">Desert Quail Inn</h3>
+            </a>
+            <b class="product-card-price">От 2500 ₽</b>
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button class="product-card-button favorite">В избранное</button>
+            </li>
+
+            <li class="product-card"></li>
+            <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="">
+            <h3 class="product-card-title">GreenTree Inn</h3>
+            </a>
+            <b class="product-card-price">От 1500 ₽</b>
+            <a class="product-card-button button" href="#">Подробнее</a>
+            <button class="product-card-button favorite">В избранное</button>
+            </li>
+        </ul>
+
+        <ul class="pagination">
+            <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">2</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">3</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">4</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">5</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">6</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">7</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">8</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">9</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link href="#">10</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                    <span class="visually-hidden">Следующая страница</span>
+                </a>
+            </li>
+        </ul>
+        <button class="button pagination-show-more" type="button">Показать еще</button>
     </main>
+
   <footer class="page-footer">
     <section class="newsletter">
       <h2 class="page-fotter-title">ПОДПИШЕТЕСЬ НА РАССЫЛКУ</h2>
@@ -140,7 +236,6 @@
 
     </section>
     <section class="htmlacademy-link"></section>
-
   </footer>
   </body>
 </html>
